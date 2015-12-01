@@ -1,0 +1,831 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"arti",
+				"articleImg"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"bottom",
+				"bottom-bar"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"white",
+				"whiteBox"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"mov",
+				"moreVidBtn"
+			],
+			[
+				"fon",
+				"font-variant"
+			],
+			[
+				"in",
+				"inside"
+			],
+			[
+				"d",
+				"disc"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"non",
+				"non-responsive"
+			],
+			[
+				"photo",
+				"photoPage"
+			],
+			[
+				"left",
+				"leftColumn"
+			],
+			[
+				"video",
+				"videoPage"
+			],
+			[
+				"ar",
+				"maxrows	@maxrows"
+			],
+			[
+				"write",
+				"writeOutput	fn. (cfscript)"
+			],
+			[
+				"Is",
+				"isValid	fn. (cfscript)"
+			],
+			[
+				"resu",
+				"result_friends"
+			],
+			[
+				"chose",
+				"chosen-select"
+			],
+			[
+				"face",
+				"facebook-btn"
+			],
+			[
+				"fac",
+				"facebook-modal"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"Struc",
+				"structKeyExists	fn. (cfscript)"
+			],
+			[
+				"w",
+				"writeOutput	fn. (cfscript)"
+			],
+			[
+				"Hea",
+				"HealthCare"
+			],
+			[
+				"wr",
+				"writeDump	fn. (cfscript)"
+			],
+			[
+				"wom",
+				"wom_facebook"
+			],
+			[
+				"wo",
+				"wom_twitter"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"post",
+				"postToFeed"
+			],
+			[
+				"e",
+				"echo	<?php echo … ?>"
+			],
+			[
+				"auth",
+				"authResponse"
+			],
+			[
+				"str",
+				"structIsEmpty	fn. (cfscript)"
+			],
+			[
+				"structco",
+				"structCount	fn. (cfscript)"
+			],
+			[
+				"STruc",
+				"structNew	fn. (cfscript)"
+			],
+			[
+				"struct",
+				"isStruct	fn. (cfscript)"
+			],
+			[
+				"Str",
+				"structNew	fn. (cfscript)"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"marin",
+				"margin-left"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"sli",
+				"sliderItem"
+			],
+			[
+				"is",
+				"isActive"
+			],
+			[
+				"pro",
+				"propertySize"
+			],
+			[
+				"_pro",
+				"_propertySize"
+			],
+			[
+				"ajax",
+				"ajaxInProgress"
+			],
+			[
+				"clear",
+				"clearMoreProjects"
+			],
+			[
+				"proj",
+				"projectData"
+			],
+			[
+				"sta",
+				"startRecord"
+			],
+			[
+				"start",
+				"startRecord"
+			],
+			[
+				"Proj",
+				"ProjectType"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"slid",
+				"sliderObj"
+			],
+			[
+				"stat",
+				"State"
+			],
+			[
+				"switc",
+				"switcherData"
+			],
+			[
+				"any",
+				"Any"
+			],
+			[
+				"g",
+				"getProjects"
+			],
+			[
+				"project",
+				"projectType"
+			],
+			[
+				"ite",
+				"itemTemplate"
+			],
+			[
+				"a",
+				"auto"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"last_filter": "Package Control: li",
+		"selected_items":
+		[
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme"
+	],
+	"file_history":
+	[
+		"/C/Users/Peter A/Documents/petrons_projects/promolosity/www/.git/config",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/css/main -copy.css",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/types/project_post_type.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/js/jquery.superslides.js",
+		"/C/Users/Peter A/Downloads/Omniyat_Website-2015-08-24/Omniyat Website/projects/onepalmjumeirah.html",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/footer.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/single-articles.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/single-project.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/partials/slider.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/partials/project_text_links.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/partials/details.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/page-press-room.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/page-invest.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/press-room.html",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/partials/enquire_section.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/partials/google_map.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/css/main.css",
+		"/C/Users/Peter A/Downloads/Omniyat_Website-2015-08-24/Omniyat Website/projects/anwa.html",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/types/article_post_type.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/css/projects-page.css",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/types/star_post_type.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/functions.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/partials/project_registration.php",
+		"/C/Users/Peter A/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/css/main-from-site.css",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/header.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/page-home.php",
+		"/C/Users/Peter A/Downloads/Omniyat_Website-2015-08-24/Omniyat Website/projects.html",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/partials/artists_section.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/page-about.php",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/api-template.php",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-config.php",
+		"/C/Users/Peter A/Downloads/Omniyat_Website-2015-08-24/Omniyat Website/projects/bayswater.html",
+		"/C/Users/Peter A/Downloads/Omniyat_Website-2015-08-24/Omniyat Website/about.html",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/.htaccess",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/plugins/ajax-search-lite/css/style.basic.css",
+		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/plugins/ajax-search-lite/css/style-underline.css",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/services-details-page-template.php",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/program-details-page-template.php",
+		"/C/Users/Peter A/Documents/petrons_projects/gobieta.com/omniyat/wp-content/themes/enfold/css/custom.css",
+		"/C/Users/Peter A/Documents/petrons_projects/gobieta.com/omniyat/wp-content/themes/enfold/page-projects.php",
+		"/C/Users/Peter A/Documents/petrons_projects/gobieta.com/omniyat/wp-content/themes/enfold/css/custom-copy.css",
+		"/C/Users/Peter A/Documents/petrons_projects/gobieta.com/omniyat/wp-content/themes/enfold/css/dynamic-css.php",
+		"/C/Users/Peter A/Documents/petrons_projects/gobieta.com/omniyat/wp-content/themes/enfold/css/shortcodes.css",
+		"/C/Users/Peter A/Documents/petrons_projects/promolosity-test/old/promolocity-db.sql",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/C/Users/Peter A/Documents/petrons_projects/promolosity-test/old/wp-config.php",
+		"/C/Users/Peter A/Documents/petrons_projects/promolosity-test/old/promolocity-db",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/_ajax-load-more.php",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/error.log",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/archive.php",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/_sunrise.php",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/taxpayer-rights.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/news-information.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/annual-report.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/js/scripts.js",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/global.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-ARC.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Layout.cshtml",
+		"/C/Users/Peter A/Downloads/ajax-load-more/error.log",
+		"/C/Users/Peter A/Downloads/ajax-load-more/ajax-load-more/ajax-load-more.php",
+		"//10.28.24.98/c/webroot/websites/taxpayeradvocate.irs.gov/tas.refresh/Themes/TAS.Theme2/Views/Orchard.Search/Search/index.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-MostSeriousProblem.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Widget-Name-arcnews.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-InfoHubArticle.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-ARCPage.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-ProjectionPage-url-news.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-ProjectionPage.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-ARCReportGraphics.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-ARCMSPHomepage.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-ARCAccordionPage.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/type.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/home.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/get-help.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-HomePage.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Layout-url-get-help.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/js/map-scripts/map.js",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-AboutTAS.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-TaxIssuePage.Detail.cshtml",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-url-about-litc.cshtml",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/local-config.php",
+		"/C/Users/Peter A/AppData/Local/Temp/fz3temp-1/local-config 2.php",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/js/map-scripts/jquery.usmap.js",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/js/plugins.js",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/js/searchfilters.js",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Scripts/smartsearch.js",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/about-tas.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/styles.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Views/Content-url-contact-us.cshtml",
+		"/C/Users/Peter A/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-settings",
+		"/C/Users/Peter A/AppData/Roaming/Sublime Text 2/Packages/User/JSLint.sublime-settings",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/tas.refresh2.sublime-project",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/Styles/less/bootstrap.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/styles/grid.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/styles/responsive.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/styles/variables-mixins.less",
+		"/C/Projects/MeijerNewsroom1.x/src/Orchard.Web/Themes/Meijer/Styles/bootstrap-responsive.css",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/styles/home.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/styles/section-global.less",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/front-page.php",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/index.html",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/footer.php",
+		"/C/Projects/TAS.refresh/Themes/TAS.Theme2/header.php",
+		"/C/Projects/MeijerNewsroom1.x/src/Orchard.Web/Themes/Meijer/Views/Layout.cshtml",
+		"/C/Projects/MeijerNewsroom1.x/src/Orchard.Web/Themes/Meijer/Views/Menu.cshtml",
+		"/C/Projects/MeijerNewsroom1.x/src/Orchard.Web/Themes/Meijer/Views/Layout-fluid.cshtml",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/styles/wordpress-utilities.less",
+		"/C/Projects/AnationinMotion.org/themes/aaos/functions.php",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/functions.php",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/js/scripts.js",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/ftpsync.settings",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/styles/fonts.less",
+		"/C/Users/peter.abeln/Downloads/webfontkit-20140117-143849/stylesheet.css",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/styles/grid.less",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/style.css",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/style.less",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/img/hero-fpo.jpg",
+		"/C/Users/peter.abeln/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/index.html",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/styles/section-global.less",
+		"/C/Projects/AnationinMotion.org/themes/aaos/sidebar.php",
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/header.php",
+		"/C/Projects/MeijerCommunity/wordpress-3.8/wordpress/wp-config.php",
+		"/C/Projects/Celgene/Celgene.PANC.WP/wp-config.php",
+		"//weber3-vmdev01.inetuhosted.net/c$/webroot/websites/advocatetoolkit.com/dev/Application.cfc",
+		"//weber3-vmweb03.inetuhosted.net/c$/webroot/websites/redwoodeditor.com/v3/fck-editor/fckconfig.js",
+		"/C/Projects/OceanSprayITG/ru/wp-config.php",
+		"//weber3-vmweb03.inetuhosted.net/c$/webroot/websites/advocatetoolkit.com/www/js/scripts-map.js",
+		"//weber3-vmdev01.inetuhosted.net/c$/webroot/websites/v3.redwoodeditor.com/www/fck-editor/fckconfig.js"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\Peter A\\Documents\\petrons_projects\\peterskitchen.co\\omniyat\\wp-content\\themes\\omniyat-theme",
+			"C:\\Projects\\TAS.refresh\\Themes\\TAS.Theme2\\Views",
+			"C:\\Projects\\VHA\\eed",
+			"C:\\webroot\\websites\\armyedspace.com\\new-www",
+			"C:\\webroot\\websites\\armyedspace.com\\new-www\\news-and-updates\\news-e-newsletter",
+			"C:\\webroot\\websites\\armyedspace.com\\new-www",
+			"C:\\Projects\\WordofMom\\dev",
+			"C:\\Projects\\WordofMom\\dev\\com",
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"dropdown-menu",
+			"menu-item-has-children",
+			"dropdown-men",
+			"menu-site-menu",
+			"add_theme_support",
+			"html5blank_header_scripts",
+			"enqu",
+			"site-header",
+			"link_manager_enabled",
+			"link",
+			"Star",
+			"stars",
+			"project-second-row",
+			".project-second-row",
+			".project-second-row h3 ",
+			".project-second-row",
+			".project-second-row h3 ",
+			".project-registration .copy-needed span",
+			"http://www.omniyat.com/wp-content/themes/omniyat-en/img/",
+			"Project",
+			"Projects",
+			"Promolocity",
+			"promolocity",
+			"http://peterskitchen.com",
+			"promolocityUzr",
+			"http://gobieta.com/promolocity",
+			"This box will auto",
+			"Recent Coverage",
+			"more report features",
+			"teal",
+			"@blue",
+			"blue",
+			"read the full",
+			"collapse",
+			"_onClick",
+			"touch",
+			"column",
+			"%;\n",
+			"	width: 100%;\n					img {\n						width: 100%;\n					}\n				}",
+			"footer",
+			"form",
+			"hero",
+			"footer",
+			".hidden-desktop",
+			"main",
+			"media",
+			"row",
+			"rowrowrow",
+			"connect",
+			"font",
+			"	\n",
+			"Sparky Boilerplate",
+			"#vidBox ",
+			"home-video",
+			"homeVid",
+			"getPrograms",
+			"roundCorners",
+			"image-slider",
+			"font: 12px/14px Arial, Helvetica, sans-serif;",
+			"shortLi",
+			"homearticles",
+			"shortList",
+			"homeart",
+			"darkgrayBox",
+			"}\n",
+			"program-finder",
+			"interstate",
+			"'InterstateBold',",
+			"InterstateBold,",
+			"'Interstate-Bold'",
+			"h2",
+			"\n				",
+			"links",
+			"iframevid",
+			"footer",
+			"h1,",
+			"mult",
+			"pager",
+			"photo",
+			"photos",
+			"<b class=\"caret\"></b>",
+			"caret",
+			"h3",
+			"#slider",
+			"childrenMaxWidth",
+			"wrapperWidth",
+			"width",
+			"sliderCon",
+			"240px",
+			"body",
+			"getGallery",
+			"\"><a href=\"./\">&laquo;",
+			"<body marginheight=\"0\" marginwidth=\"0\">",
+			"img",
+			"/P>",
+			"<P>",
+			"</p>",
+			"<P>",
+			"</p>",
+			"<P>",
+			"strong",
+			"img",
+			"img	",
+			"</P>",
+			"<P>",
+			"strong",
+			"span",
+			"img",
+			"span",
+			"spa",
+			"span",
+			"alt",
+			"<img src=\"",
+			"span",
+			"civic",
+			"nesea",
+			"nscdiscovery",
+			"nscd",
+			"labe",
+			"Interstate",
+			"shortList",
+			"rel=\"no-follow\"",
+			"liteBlueBox",
+			"<br clear=\"all\" />",
+			"<br clear=\"all\">",
+			"/home",
+			"blueBox",
+			"liteBlueBox"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sub-menu",
+			"sub-men",
+			"Article",
+			"articles",
+			"/omniyat/wp-content/themes/omniyat-theme/img/",
+			"Star",
+			"Stars",
+			"promolosity",
+			"http://peterskitchen.co",
+			"http://peterskitchen.com",
+			"@teal",
+			".video-box",
+			"home-video",
+			"font: 1em/0.9em Arial, Helvetica, sans-serif;",
+			"home-articles",
+			"InterstateBold,",
+			"'InterstateBold',",
+			"InterstateBold",
+			"<span class=\"caret\"></span>",
+			"\"><h3><a href=\"./\">&laquo;",
+			"<body style=\"margin: 0px;\">",
+			"img alt=\"Army Ed Space News &amp; Updates\"",
+			"img  alt=\"Army Ed Space News &amp; Updates\"",
+			"img alt=\"Army Ed Space News &amp; Updates\"",
+			"</p>",
+			"<p>",
+			"<img alt=\"ArmyEdSpace Newsletter\" src=\"",
+			"rel=\"nofollow\"",
+			"liteGrayBox",
+			"<br />",
+			"grayBox",
+			"liteGrayBox",
+			"grayBox",
+			"GrayBox",
+			"grayBox",
+			"http://wordofmom.org/",
+			"'",
+			"/img/",
+			"body.data('propertySize')",
+			"body.data('size')",
+			"body.data('projectType')",
+			"",
+			"'",
+			"@cornerradius"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "langham.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

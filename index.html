@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>The HTML5 Herald</title>
+<meta name="description" content="The HTML5 Herald">
+<meta name="author" content="SitePoint">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+	html, body {
+		height:100%;
+	}
+	body, div {
+		margin: 0;
+		padding: 0;
+		height: auto;
+	}
+	p, h1, h2 {
+		margin: 0;
+		padding:0;
+	}
+	.pink {
+		background-color: #f6ced6;
+	}
+	.gray {
+		background-color: #56565a;
+	}
+	.gray-trans {
+		background-color: rgba(0, 0, 0, .51);
+		height: 540px;
+	}
+	.block {
+		text-align: center;
+		position: relative;
+		overflow: auto;
+	}
+	.top-img {
+		background-position: top center;
+		background-size: cover;
+		left: 0;
+		top: 0;
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+	}
+	.top-txt {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 101;
+	}
+	#top-block .block .copy {
+		text-align: center;
+		opacity: 0;
+	}
+	.block .copy {
+		text-align: center; 
+	}
+	.block .pink .copy,
+	.block .gray .copy {
+		padding: 100px 0;
+		margin: 0 auto;
+	}
+	.block .gray .copy {
+		color: #fff;
+	}
+	.topper {
+		min-height: 1580px;
+		background: transparent;
+	}
+</style>
+</head>
+<body>
+	<div class="head pink">
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<div class="menu gray">
+			<p>hello</p>
+			<p>hello</p>
+		</div>
+	</div>
+	
+	<div class="block topper" data-parallax="scroll" data-image-src="/wp-content/themes/langham-theme/dev-images/top-img.jpg" id="top-block" style="height:1580px;">
+		<div class="top-txt gray-trans">
+			<div class="copy fadeIn">
+				<h1>the hotel</h1><h2>Some more copy here</h2>
+			</div>
+		</div>
+	</div>
+	<div class="block">
+		<div class="solid pink">
+			<div class="copy">
+				<h3>With unobstructed views of</h3>
+				<p>Downtown Dubai, the Burj Khalifa and the<br> Water Canal, the Langham Place offers a<br> privileged panorama, XX splendid rooms,<br> and unsurpassed services.</p> 
+			</div>
+		</div>
+	</div>
+	<div class="block">
+		<div class="solid gray">
+			<div class="copy">
+				<h3>With unobstructed views of</h3>
+				<p>Downtown Dubai, the Burj Khalifa and the<br> Water Canal, the Langham Place offers a<br> privileged panorama, XX splendid rooms,<br> and unsurpassed services.</p> 
+			</div>
+		</div>
+	</div>
+
+	<div id="second-block" class="block" class="parallax-window" data-parallax="scroll" data-image-src="/wp-content/themes/langham-theme/dev-images/pic2.jpg" style="height:1580px;">
+		<div class="copy"></div>
+	</div>
+	<div class="block">
+		<div class="solid gray">
+			<div class="copy">
+				<h3>With unobstructed views of</h3>
+				<p>Downtown Dubai, the Burj Khalifa and the<br> Water Canal, the Langham Place offers a<br> privileged panorama, XX splendid rooms,<br> and unsurpassed services.</p> 
+			</div>
+		</div>
+	</div>
+
+	<div id="third-block" class="block" class="parallax-window" data-parallax="scroll" data-image-src="/wp-content/themes/langham-theme/dev-images/pic3.jpg" style="height:1580px;">
+		<div class="copy"></div>
+	</div>
+
+	<div class="block">
+		<div class="solid gray">
+			<div class="copy">
+				<h3>With unobstructed views of</h3>
+				<p>Downtown Dubai, the Burj Khalifa and the<br> Water Canal, the Langham Place offers a<br> privileged panorama, XX splendid rooms,<br> and unsurpassed services.</p> 
+			</div>
+		</div>
+	</div>
+
+	<div id="forth-block" class="block" class="parallax-window" data-parallax="scroll" data-image-src="/wp-content/themes/langham-theme/dev-images/pic4.jpg" style="height:1580px;">
+		<div class="copy"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="dev-images/parallax.min.js"></script>
+	
+	<script>
+		$(function() {
+			$(".block .copy.fadeIn").delay(1000).animate(
+				{ opacity: 1 }, 
+				700, 
+				function() {
+					var bgImg = $('.top-img').data('bg-img');
+					$('.top-img').css('background-image', 'url('+ bgImg +')');
+					$('.top-img').fadeIn(2000);
+				});
+
+		});
+
+		$(window).scroll(function () {
+			var scrollTop = $(window).scrollTop();
+			var height = $(window).height();
+			$('.top-txt').css({
+				'opacity': ((height - scrollTop) / height)
+			});
+		});
+
+		$(window).on('scroll', function() {
+			if($(window).scrollTop() >= $('#top-block').offset().top + $('#top-block').outerHeight() - window.innerHeight) {
+				//$('#top-block').css('position', 'fixed');
+				console.log('end reached');
+			}
+		});
+
+		$('.topper').parallax({
+			imageSrc: $('.topper').data('image-src'),
+			positionY: 'top'
+		});
+
+
+	</script>
+</body>
+</html>
