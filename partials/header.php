@@ -1,28 +1,20 @@
 <header class="header">
-	<div class="header-container container">
-		<?php if( is_front_page() ) : ?>
-			<h1 class="header-logo">
-				<a class="header-logo" href="<?php echo bloginfo('url'); ?>"><?php echo bloginfo('name'); ?></a>
-			</h1>
-		<?php else : ?>
-			<a class="header-logo" href="<?php echo bloginfo('url'); ?>"><?php echo bloginfo('name'); ?></a>
-		<?php endif; ?>
-
-		<div class="header-menu mainMenu">
-			<div class="mainMenu-titleBar">
-				<button class="mainMenu-toggle">&times;</button>
-			</div>
-			<div class="searchForm searchForm--mainMenu">
-				<?php try_get_template_part('partials', 'searchform'); ?>
-			</div>
-
-			<?php wp_nav_menu( array(
-				'theme_location' => 'header',
-				'container' => 'nav',
-				'container_class' => 'mainMenu-menu',
-				'menu' => 'Header',
-				'menu_class' => 'mainMenu-list'
-			)); ?>
+	<div class="head">
+		<div class="header-container container">
+			<div class="title"><a href="">LANGHAM PLACE</a></div>
+			<div class="subtitle">DOWNTOWN DUBAI</div>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="header-container container">
+		<?php wp_nav_menu( array(
+			'theme_location' => 'header',
+			'container' => 'nav',
+			'container_class' => 'mainMenu-menu',
+			'menu' => 'Main Nav',
+			'menu_class' => 'mainMenu-list',
+			'link_after' => '<span class="my-span">|</span>'
+		)); ?>
 		</div>
 	</div>
 </header>

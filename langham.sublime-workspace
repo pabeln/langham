@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-size"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
 				"text",
 				"text-align"
 			],
@@ -12,20 +20,12 @@
 				"padding-left"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"b",
 				"border"
 			],
 			[
 				"arti",
 				"articleImg"
-			],
-			[
-				"bac",
-				"background-image"
 			],
 			[
 				"wid",
@@ -315,6 +315,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4531,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 27,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -389,10 +405,23 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme"
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/dev-images",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/dist/scripts",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/node_modules/gulp-webpack",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/node_modules/jquery",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/node_modules/jquery/dist",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/scripts"
 	],
 	"file_history":
 	[
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/dev-images/parallax.min.js",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/index.html",
+		"/C/wamp/www/wp-config.php",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/httpd.conf",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-config.php",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/package.json",
+		"/C/Users/Peter A/Documents/petrons_projects/Langham Hotel/www/wp-content/themes/langham-theme/langham.sublime-project",
 		"/C/Users/Peter A/Documents/petrons_projects/promolosity/www/.git/config",
 		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/css/main -copy.css",
 		"/C/Users/Peter A/Documents/petrons_projects/peterskitchen.co/omniyat/wp-content/themes/omniyat-theme/types/project_post_type.php",
@@ -513,18 +542,11 @@
 		"/C/Users/peter.abeln/Downloads/h5bp-html5-boilerplate-v4.2.0-0-g0adda79/h5bp-html5-boilerplate-defe483/index.html",
 		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/styles/section-global.less",
 		"/C/Projects/AnationinMotion.org/themes/aaos/sidebar.php",
-		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/header.php",
-		"/C/Projects/MeijerCommunity/wordpress-3.8/wordpress/wp-config.php",
-		"/C/Projects/Celgene/Celgene.PANC.WP/wp-config.php",
-		"//weber3-vmdev01.inetuhosted.net/c$/webroot/websites/advocatetoolkit.com/dev/Application.cfc",
-		"//weber3-vmweb03.inetuhosted.net/c$/webroot/websites/redwoodeditor.com/v3/fck-editor/fckconfig.js",
-		"/C/Projects/OceanSprayITG/ru/wp-config.php",
-		"//weber3-vmweb03.inetuhosted.net/c$/webroot/websites/advocatetoolkit.com/www/js/scripts-map.js",
-		"//weber3-vmdev01.inetuhosted.net/c$/webroot/websites/v3.redwoodeditor.com/www/fck-editor/fckconfig.js"
+		"/C/Projects/MeijerCommunity/meijercom/MeijerCommunity/header.php"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -548,6 +570,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"www",
+			"wamp",
+			"vir",
 			"dropdown-menu",
 			"menu-item-has-children",
 			"dropdown-men",
@@ -672,10 +697,7 @@
 			"rel=\"no-follow\"",
 			"liteBlueBox",
 			"<br clear=\"all\" />",
-			"<br clear=\"all\">",
-			"/home",
-			"blueBox",
-			"liteBlueBox"
+			"<br clear=\"all\">"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -737,8 +759,66 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4495,
+								4495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2205.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/Langs/Git.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

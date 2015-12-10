@@ -2,10 +2,19 @@
 Footer
 ================================================================================= */
 
-.footer { .clearfix(); }
-.footer-container {}
-.footer-copyright { float: left; }
-.footer-menu { float: right; }
+.footer { 
+	.clearfix(); 
+	background-color: @gray;
+}
+.footer-container {
+	text-align: center;
+	padding: 20px 0;
+	a {
+		color: @brown;
+		font-family: @brand-font-serif;
+		text-transform: uppercase;
+	}
+}
 
 // Small and larger
 @media screen and (min-width: @screen-sm-min) {}

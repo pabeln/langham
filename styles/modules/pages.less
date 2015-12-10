@@ -1,0 +1,93 @@
+/* =================================================================================
+styles for pages
+================================================================================= */
+
+.gray-trans {
+	background-color: rgba(0, 0, 0, .51);
+}
+
+section {
+	text-align: center;
+	position: relative;
+	overflow: auto;
+	&.pink {
+		background-color: #f6ced6;
+		.copy {
+			.heading, .subheading, .txt {
+				color: @gray;
+				margin: 30px auto;
+				width: 50%;
+			}
+		}
+	}
+	&.gray {
+		background-color: #56565a;
+		.copy {
+			color: @white;
+			.heading, .subheading, .txt {
+				color: @white;
+				margin: 30px auto;
+				width: 50%;
+			}
+		}
+	}
+
+	&.top {
+		.copy-container {
+			padding: 180px 0;
+			.copy {
+				text-align: center;
+				.heading {
+					color: @pink;
+					font-size: 3em;
+					font-family: @brand-font-serif;
+				}
+				.subheading {
+					font-size: 1.5em;
+					font-family: @brand-font-serif;
+				}
+			}
+			.fadeIn {
+				opacity: 0;
+			}
+		}
+	}
+	.copy-container {
+		text-align: center;
+		.copy {
+			padding: 100px 0;
+			.heading, .subheading, .txt {
+			}
+			.heading {
+				font-size: 2.3em;
+				font-family: @brand-font-serif;
+			}
+			.subheading {
+				font-size: 1.5em;
+				font-family: @brand-font-sans;
+			}
+			.txt {
+				font-size: 1em;
+				font-family: @brand-font-sans;	
+			}
+		}
+	}
+}
+
+// Small and larger
+@media screen and (min-width: @screen-sm-min) {}
+
+// Medium and larger
+@media screen and (min-width: @screen-md-min) {}
+
+// Large and larger
+@media screen and (min-width: @screen-lg-min) {}
+
+// X-Small only
+@media screen and (max-width: @screen-xs-max) {}
+
+// Small only
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {}
+
+// Medium only
+@media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {}

@@ -6,19 +6,16 @@ require('es5-shim');
 require('consolelog');
 
 var $               = require('jquery');
-var carousel        = require('./carousel.js');
 var responsive      = require('./responsive.js');
-var SocialModule    = require('./social.js');
 var AnalyticsModule = require('./analytics.js');
-var social = new SocialModule({ fbAppId: '' });
-var analytics = new AnalyticsModule({ gaid: '' });
+var analytics 		= new AnalyticsModule({ gaid: '' });
+var scripts 		= require('./scripts.js');
 
 /**
  * Initialize the app on DOM ready
  */
 $(function() {
-	analytics.init();
-	social.init();
-	carousel.init();
+	//analytics.init();
 	responsive.init();
+	scripts.init();
 });

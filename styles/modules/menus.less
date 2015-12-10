@@ -5,10 +5,32 @@ Menus
 .mainMenu {}
 .mainMenu-titleBar { display: none; }
 .mainMenu-search {}
-.mainMenu-menu {}
-.mainMenu-list { .clearfix(); margin: 0 -3px;
-	li { float: left; }
-	a { background: @gray-lighter; display: block; margin: 0 3px; padding: 10px 20px; }
+.mainMenu-menu {
+	text-align: center;
+}
+.mainMenu-list { 
+	.clearfix(); 
+	margin: 0 auto;
+	display: block;
+	li { 
+		display: inline-block;
+		padding: 15px 0;
+	}
+	a { 
+		background: @gray;
+		color: @white; 
+		display: block; 
+		font-family: @brand-font-sans;
+		font-size: 0.75em;
+		margin: 0; 
+		padding: 0;
+		text-transform: uppercase;
+		.my-span{
+			float:right;
+			font-size: 0.9em;
+			margin: 0 0.3em 0 .7em;
+		}
+	}
 }
 
 .menuBar {}

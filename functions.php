@@ -1,6 +1,8 @@
 <?php
 
 function try_theme_setup() {
+
+
 	// Enable support for post thumbnails on posts and pages
 	add_theme_support('post-thumbnails');
 
@@ -27,6 +29,29 @@ function try_theme_setup() {
 		'primary-navigation' => 'Primary Navigation',
 		'secondary-navigation' => 'Secondary Navigation'
 	));
+	function remove_menus(){
+		remove_menu_page( 'index.php' );                  //Dashboard
+		remove_menu_page( 'edit-comments.php' );          //Comments
+		remove_menu_page( 'edit.php' );                   //Posts
+	}
+	add_action( 'admin_menu', 'remove_menus' );
+
+	function remove_linkmanager() {
+		$enabled = get_option( 'link_manager_enabled' );
+		if ( 0 !== $enabled  )
+			update_option( 'link_manager_enabled', 0 );
+	}
+	add_action('admin_init', 'remove_linkmanager');
+
+	//Page Slug Body Class
+	function add_slug_body_class( $classes ) {
+		global $post;
+		if ( isset( $post ) ) {
+			$classes[] = $post->post_type . '-' . $post->post_name;
+		}
+		return $classes;
+	}
+	add_filter( 'body_class', 'add_slug_body_class' );
 
 	// Disables the admin bar
 	// add_filter('show_admin_bar', '__return_false');
@@ -61,3 +86,26 @@ function try_theme_setup() {
 	}
 }
 add_action('after_setup_theme', 'try_theme_setup');
+
+function disable_wp_emojicons() {
+
+  // all actions related to emojis
+  remove_action( 'admin_print_styles', 'print_emoji_styles' );
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+
+  // filter to remove TinyMCE emojis
+  add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
+}
+add_action( 'init', 'disable_wp_emojicons' );
+function disable_emojicons_tinymce( $plugins ) {
+  if ( is_array( $plugins ) ) {
+    return array_diff( $plugins, array( 'wpemoji' ) );
+  } else {
+    return array();
+  }
+}
