@@ -25,10 +25,22 @@ function init() {
 		positionY: 'top'
 	});
 
-	// floorplans expando
-	$('.plan-wrapper').each(function(){
+	// expando
+	/*$('.plan-wrapper').each(function(){
 		var header = $(this).find('.plan-header');
 		var content = $(this).find('.floorplan');
+		header.on('click', function(){
+			if (content.is(':visible')) {
+				content.slideUp('slow');
+			} else {
+				content.slideDown('slow');
+			}
+		});
+
+	});*/
+	$('.expando-wrapper').each(function(){
+		var header = $(this).find('.expando-trigger');
+		var content = $(this).find('.expando');
 		header.on('click', function(){
 			if (content.is(':visible')) {
 				content.slideUp('slow');

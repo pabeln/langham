@@ -13,21 +13,21 @@ section {
 	&.pink {
 		background-color: #f6ced6;
 		.copy {
-			.heading, .subheading, .txt {
+			.heading, .sub-heading, .txt {
 				color: @gray;
-				margin: 30px auto;
-				width: 50%;
+				line-height: 1;
+				margin: 0 auto;
 			}
 		}
 	}
 	&.gray {
 		background-color: #56565a;
 		.copy {
-			color: @white;
-			.heading, .subheading, .txt {
-				color: @white;
-				margin: 30px auto;
-				width: 50%;
+			color: @brown;
+			.heading, .sub-heading, .txt {
+				color: @brown;
+				line-height: 1;
+				margin: 0 auto;
 			}
 		}
 	}
@@ -41,9 +41,11 @@ section {
 					color: @pink;
 					font-size: 3em;
 					font-family: @brand-font-serif;
+					margin: 0 auto;
+					text-transform: capitalize;
 				}
-				.subheading {
-					font-size: 1.5em;
+				.sub-heading {
+					font-size: 2.5em;
 					font-family: @brand-font-serif;
 				}
 			}
@@ -55,20 +57,53 @@ section {
 	.copy-container {
 		text-align: center;
 		.copy {
-			padding: 100px 0;
-			.heading, .subheading, .txt {
+			padding: 200px 0;
+			.heading, .sub-heading, .txt {
 			}
 			.heading {
-				font-size: 2.3em;
+				font-size: 3em;
 				font-family: @brand-font-serif;
+				text-transform: capitalize;
+				width: 60%;
 			}
-			.subheading {
-				font-size: 1.5em;
-				font-family: @brand-font-sans;
+			.sub-heading {
+				font-size: 2.5em;
+				font-family: @brand-font-serif;
+				width: 60%;
 			}
 			.txt {
 				font-size: 1em;
-				font-family: @brand-font-sans;	
+				font-family: @brand-font-sans;
+				line-height: 1.7;
+				margin-top: 40px;
+				width: 65%;	
+			}
+		}
+	}
+	&.map { //map on the about page
+		background-color: @gray;
+		background-position: center 210px;
+		background-repeat: no-repeat;
+		height: 763px;
+		.copy-container {
+			text-align: center;
+			.copy {
+				padding: 125px 0 100px 0;	
+				.heading {
+					color: @brown;
+					font-size: 3em;
+					font-family: @brand-font-serif;
+					text-transform: capitalize;
+					width: 60%;
+					margin: 0 auto;
+				}
+				.sub-heading {
+					color: @brown;
+					font-size: 2.5em;
+					font-family: @brand-font-serif;
+					width: 60%;
+					margin: 0 auto;
+				}
 			}
 		}
 	}

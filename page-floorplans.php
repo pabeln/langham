@@ -13,12 +13,12 @@
 		if( $loop->have_posts() ):
 			while ( $loop->have_posts() ) : $loop->the_post();
 	?>
-		<div class="plan-wrapper">
-			<div class="plan-header">
+		<div class="plan-wrapper expando-wrapper">
+			<div class="plan-header expando-trigger">
 				<h2 class="plan-title"><?php echo the_title(); ?></h2>
 				<p class="plan-subtitle"><?php echo the_field('sub_title'); ?></p>
 			</div>
-			<div class="floorplan">
+			<div class="floorplan expando">
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1">
 						<div class="floorplan-diagram">
