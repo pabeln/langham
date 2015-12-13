@@ -3,5 +3,5 @@
 	$imgH = $imgObj['sizes']['large-height'];
 ?>
 
-<section class="img" data-parallax="scroll" data-image-src="<?php echo $imgObj['url'] ?>" style="height:<?php echo $imgH; ?>px;">	
+<section class="para" data-image="<?php echo $imgObj['url'] ?>" style="background-image: url('<?php echo $imgObj['url'] ?>');height:<?php echo ($imgH+300); ?>px;">
 </section>

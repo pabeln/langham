@@ -1,17 +1,16 @@
 /*
- *  Module: dealer filter
+ *  Module: general site scripts
  */
 var $ 			= require('jquery');
-var parallax 	= require('./vendor/parallax.min.js');
 
 
 /**
- * Initialize dealer filter
+ * Initialize scripts
  */
 function init() {
 
+	// top image overlay fade in
 	$('section.top .fadeIn').delay(1000).animate({ opacity: 1 }, 700);
-
 	$(window).scroll(function () {
 		var scrollTop = $(window).scrollTop();
 		var height = $(window).height();
@@ -20,24 +19,7 @@ function init() {
 		});
 	});
 
-	$('.top').parallax({
-		imageSrc: $('.top').data('image-src'),
-		positionY: 'top'
-	});
-
-	// expando
-	/*$('.plan-wrapper').each(function(){
-		var header = $(this).find('.plan-header');
-		var content = $(this).find('.floorplan');
-		header.on('click', function(){
-			if (content.is(':visible')) {
-				content.slideUp('slow');
-			} else {
-				content.slideDown('slow');
-			}
-		});
-
-	});*/
+	// expando for pressroom and floor plans
 	$('.expando-wrapper').each(function(){
 		var header = $(this).find('.expando-trigger');
 		var content = $(this).find('.expando');

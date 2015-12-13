@@ -17,4 +17,5 @@
 		)); ?>
 		</div>
 	</div>
+	<div class="mobile-nav-icon"></div>
 </header>

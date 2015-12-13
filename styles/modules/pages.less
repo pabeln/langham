@@ -5,7 +5,9 @@ styles for pages
 .gray-trans {
 	background-color: rgba(0, 0, 0, .51);
 }
-
+.hideme {
+    opacity:0;
+}
 section {
 	text-align: center;
 	position: relative;
@@ -80,49 +82,89 @@ section {
 			}
 		}
 	}
-	&.map { //map on the about page
+	&.map-container { //map on the about page
 		background-color: @gray;
-		background-position: center 210px;
-		background-repeat: no-repeat;
 		height: 763px;
-		.copy-container {
-			text-align: center;
-			.copy {
-				padding: 125px 0 100px 0;	
-				.heading {
-					color: @brown;
-					font-size: 3em;
-					font-family: @brand-font-serif;
-					text-transform: capitalize;
-					width: 60%;
-					margin: 0 auto;
-				}
-				.sub-heading {
-					color: @brown;
-					font-size: 2.5em;
-					font-family: @brand-font-serif;
-					width: 60%;
-					margin: 0 auto;
+		.map {
+			background-position: center 210px;
+			background-repeat: no-repeat;
+			height: 763px;	
+			.copy-container {
+				text-align: center;
+				.copy {
+					padding: 125px 0 100px 0;	
+					.heading {
+						color: @brown;
+						font-size: 3em;
+						font-family: @brand-font-serif;
+						text-transform: capitalize;
+						width: 60%;
+						margin: 0 auto;
+					}
+					.sub-heading {
+						color: @brown;
+						font-size: 2.5em;
+						font-family: @brand-font-serif;
+						width: 60%;
+						margin: 0 auto;
+					}
 				}
 			}
 		}
 	}
 }
 
-// Small and larger
-@media screen and (min-width: @screen-sm-min) {}
-
 // Medium and larger
-@media screen and (min-width: @screen-md-min) {}
+@media screen and (min-width: @screen-md-min) { // 992 & larger
+	section {  }
+}
 
 // Large and larger
-@media screen and (min-width: @screen-lg-min) {}
+@media screen and (min-width: @screen-lg-min) { // 1200 & larger
+	section {  }
+}
 
-// X-Small only
-@media screen and (max-width: @screen-xs-max) {}
+/***************************************************************************/
+/* X-Small only */
+/***************************************************************************/
+@media screen and (max-width: @screen-xs) { // 480 or smaller
+
+	section {  
+		&.top { 
+			background-position: center center;
+			background-size: cover;
+			max-height: 600px;
+		}
+		.copy-container .copy {
+			padding: 100px 0;
+			.heading {
+				width: 100%;
+				font-size: 2em;
+			}
+			.txt {
+				width: 100%;
+			}
+		}
+		&.para {
+			background-position: center center;
+			background-size: cover;
+			max-height: 600px;
+		}
+	}
+
+}
+
 
 // Small only
-@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {}
+@media screen and (min-width: @screen-xs-min) and (max-width: @screen-xs-max) { // 480 & 767
+
+	section {  }
+
+}
 
 // Medium only
-@media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {}
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { // 768 & 991 
+
+	section {  }
+
+}

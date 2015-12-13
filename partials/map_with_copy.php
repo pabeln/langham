@@ -5,11 +5,13 @@
 	$subheading = get_sub_field('sub_heading');
 ?>
 
-<section class="map" style="background-image: url(<?php echo $imgObj['url'] ?>);">
-	<div class="container copy-container">
-		<div class="copy">
-			 <?php if ($heading) { echo '<div class="heading">' . $heading . '</div>'; } ?>
-			 <?php if ($subheading) { echo '<div class="sub-heading">' . $subheading . '</div>'; } ?>
+<section class="map-container">
+	<div class="map hideme" style="background-image: url(<?php echo $imgObj['url'] ?>);">
+		<div class="container copy-container">
+			<div class="copy">
+				 <?php if ($heading) { echo '<div class="heading">' . $heading . '</div>'; } ?>
+				 <?php if ($subheading) { echo '<div class="sub-heading">' . $subheading . '</div>'; } ?>
+			</div>
 		</div>
-	</div>	
+	</div>
 </section>

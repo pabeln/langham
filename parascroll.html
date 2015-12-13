@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Efecto Parallax Plugin Demo</title>
+<!-- CSS Code -->
+<style>
+	*, html {
+margin: 0px;
+padding: 0px;
+}
+h2 {
+color: #fff;
+font-family: helvetica;
+text-align: center;
+}
+#home {
+/*
+background: url(images/bg_0.jpg) 50% 0 no-repeat fixed;
+min-height: 700px;
+*/
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+#seccion2 {
+
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.4);
+box-shadow: 0 0 20px rgba(0,0,0,0.4);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+#section3 {
+
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.4);
+box-shadow: 0 0 20px rgba(0,0,0,0.4);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+article {
+padding: 100px;
+}
+
+</style>
+<!-- JS Code -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	    $('section[data-type="parallax_section"]').each(function(){
+	        var $bgobj = $(this); // Variable para asignacion de objeto
+	        $(window).scroll(function() {
+	        	$window = $(window);
+	            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+	            // cordinadas del background
+	            var coords = '50% '+ yPos + 'px';
+	            // moviendo el background
+	            $bgobj.css({ backgroundPosition: coords });
+	        });
+	    });
+	});
+
+</script>
+</head>
+<body>
+<section id="home" data-type="parallax_section" data-speed="3" style="background: url(/wp-content/themes/langham-theme/dev-images/top-img.jpg) no-repeat;min-height:1580px;">
+	<article>
+	<h2>jQuery Efecto Parallax Plugin Demo</h2>
+	</article>
+</section>
+<section style="height: 250px;background-color:#fff;">copy goes here</section>
+<section id="seccion2" data-type="parallax_section" data-speed="10" style="background: url(/wp-content/themes/langham-theme/dev-images/pic2.jpg)  50% 0 no-repeat fixed;min-height:1373px;">
+	<article>
+		<h2>Pagina: 2</h2>
+	</article>
+</section>
+<section style="height: 250px;background-color:#fff;">copy goes here</section>
+<section id="section3" data-type="parallax_section" data-speed="10" style="background: url(/wp-content/themes/langham-theme/dev-images/pic3.jpg)  50% 0 no-repeat fixed;min-height:805px;">
+	<article>
+		<h2>Pagina: 3</h2>
+	</article>
+</section>
+</body>
+</html>
