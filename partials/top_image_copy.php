@@ -6,12 +6,14 @@
 	$heading = get_sub_field('heading');
 	$subheading = get_sub_field('sub_heading');
 ?>
-<section class="top" data-image="<?php echo $imgUrl; ?>" style="background-image: url('<?php echo $imgUrl; ?>'); height:<?php echo ($imgH+300); ?>px;">
-	<div class="gray-trans">
-		<div class="container copy-container">
-			<div class="copy fadeIn">
-				 <?php if ($heading) { echo '<div class="heading">' . $heading . '</div>'; } ?>
-				 <?php if ($subheading) { echo '<div class="sub-heading">' . $subheading . '</div>'; } ?>
+<section class="top" data-image="<?php echo $imgUrl; ?>" style="height:<?php echo ($imgH+300); ?>px;">
+	<div class="top-inner" style="background-image: url('<?php echo $imgUrl; ?>');">
+		<div class="gray-trans">
+			<div class="container copy-container">
+				<div class="copy fadeIn">
+					 <?php if ($heading) { echo '<div class="heading">' . $heading . '</div>'; } ?>
+					 <?php if ($subheading) { echo '<div class="sub-heading">' . $subheading . '</div>'; } ?>
+				</div>
 			</div>
 		</div>
 	</div>

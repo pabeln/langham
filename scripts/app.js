@@ -6,6 +6,7 @@ require('es5-shim');
 require('consolelog');
 
 var $               = require('jquery');
+var carousel        = require('./carousel.js');
 var responsive      = require('./responsive.js');
 var AnalyticsModule = require('./analytics.js');
 var analytics 		= new AnalyticsModule({ gaid: '' });
@@ -17,6 +18,7 @@ var fadeInOnScroll	= require('./fadeInOnScroll.js');
  */
 $(function() {
 	//analytics.init();
+	carousel.init();
 	responsive.init();
 	scripts.init();
 	fadeInOnScroll.init();

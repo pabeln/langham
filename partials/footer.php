@@ -1,7 +1,6 @@
 <footer class="footer">
 	<div class="footer-container container">
-		<a href="">Explore More ></a>
+		<?php echo next_page_not_post('Explore More', 'true') ?>
 	</div>
-
 	<?php wp_footer(); ?>
 </footer>

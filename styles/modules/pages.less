@@ -36,19 +36,22 @@ section {
 
 	&.top {
 		.copy-container {
-			padding: 180px 0;
+			padding: 60px 0;
 			.copy {
 				text-align: center;
 				.heading {
 					color: @pink;
-					font-size: 3em;
+					font-size: 4em;
 					font-family: @brand-font-serif;
 					margin: 0 auto;
-					text-transform: capitalize;
+					font-variant: small-caps;
 				}
 				.sub-heading {
-					font-size: 2.5em;
+					color: @pink;
+					font-size: 3.5em;
 					font-family: @brand-font-serif;
+					font-style: italic;
+					margin: 0 auto;
 				}
 			}
 			.fadeIn {
@@ -65,7 +68,7 @@ section {
 			.heading {
 				font-size: 3em;
 				font-family: @brand-font-serif;
-				text-transform: capitalize;
+				font-variant: small-caps;
 				width: 60%;
 			}
 			.sub-heading {
@@ -97,7 +100,7 @@ section {
 						color: @brown;
 						font-size: 3em;
 						font-family: @brand-font-serif;
-						text-transform: capitalize;
+						font-variant: small-caps;
 						width: 60%;
 						margin: 0 auto;
 					}
@@ -123,6 +126,21 @@ section {
 @media screen and (min-width: @screen-lg-min) { // 1200 & larger
 	section {  }
 }
+// Small and larger
+@media screen and (min-width: @screen-sm-min) { // 768 & larger
+	section {  
+		&.top {
+			.top-inner {
+				background: none !important;
+			}	
+		}
+		&.para {
+			.para-inner {
+				background: none !important;
+			}	
+		}
+	}
+}
 
 /***************************************************************************/
 /* X-Small only */
@@ -131,9 +149,15 @@ section {
 
 	section {  
 		&.top { 
-			background-position: center center;
-			background-size: cover;
-			max-height: 600px;
+			max-height: 535px;
+			.top-inner {
+				background-position: center center;
+				background-size: cover;
+				max-height: 600px;
+				.copy-container {
+					padding: 100px 0;
+				}
+			}
 		}
 		.copy-container .copy {
 			padding: 100px 0;
@@ -146,9 +170,15 @@ section {
 			}
 		}
 		&.para {
-			background-position: center center;
-			background-size: cover;
 			max-height: 600px;
+			.para-inner {
+				background-position: center center;
+				background-size: cover;
+				height: 100%;
+				.copy-container {
+					padding: 100px 0;
+				}
+			}
 		}
 	}
 
