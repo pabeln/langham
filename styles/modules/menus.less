@@ -12,23 +12,30 @@ Menus
 	.clearfix(); 
 	margin: 0 auto;
 	display: block;
-	li { 
-		display: inline-block;
-		padding: 15px 0;
-	}
-	a { 
-		background: @gray;
-		color: @white; 
-		display: block; 
-		font-family: @brand-font-sans;
-		font-size: 0.75em;
-		margin: 0; 
-		padding: 0;
-		text-transform: uppercase;
-		.my-span{
-			float:right;
-			font-size: 0.9em;
-			margin: 0 0.3em 0 .7em;
+		li { 
+			display: inline-block;
+			padding: 15px 0;
+		a { 
+			background: @gray;
+			color: @white; 
+			display: block; 
+			font-family: @brand-font-sans;
+			font-size: 0.75em;
+			margin: 0; 
+			padding: 0;
+			text-transform: uppercase;
+				
+			.my-span{
+				float:right;
+				font-size: 0.9em;
+				margin: 0 0.3em 0 .7em;
+			}
+		}
+		&.current-menu-item a {
+			color: @pink;
+		}
+		&.last a .my-span {
+			display:none;
 		}
 	}
 }

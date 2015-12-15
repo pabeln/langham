@@ -1,0 +1,71 @@
+/* =================================================================================
+styles for contact
+================================================================================= */
+
+.page-contact {
+	.main {
+		background-color: @gray;
+		.container {
+			.contact-wrapper {
+				margin: 115px auto 0;
+				text-align: center;
+				h1 {
+					color: @pink;
+					font-size: 4em;
+					font-family: @brand-font-serif;
+					margin: 0 auto;
+					font-variant: small-caps;
+				}
+				.contact-copy {
+					color: @pink;
+					font-size: 1em;
+					font-family: @brand-font-sans;
+				}
+				.form-wrapper {
+					margin: 0 auto;
+					padding-top: 80px;
+					width: 60%;
+
+					.gform_body {
+						.gfield {
+							margin: 0 0 15px 0;
+							.gfield_label {
+								display: none;
+							}
+							.ginput_container input,
+							.ginput_container select,
+							.ginput_container textarea {
+								background-color: @gray;
+								border: 1px solid @white;
+								color: @white;
+								font-size: 1em;
+								font-family: @brand-font-sans;
+								padding: 15px;
+								text-transform: uppercase;
+								width: 100%;
+							}
+						}
+						#field_1_6 .gfield_label {
+							display: block;
+							color: @white;
+							font-size: 1em;
+							font-family: @brand-font-sans;
+							text-transform: uppercase;
+						}
+					}
+					#gform_submit_button_1 {
+						background: #A39782 url('@{img-path}contact-submit-btn.png') repeat-y 0 center;
+						border: none;
+						color: @gray;
+						font-family: @brand-font-serif;
+						font-size: 1.6em;
+						padding: 15px;
+						text-align:center; 
+						text-transform: uppercase;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
