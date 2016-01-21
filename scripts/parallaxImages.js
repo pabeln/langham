@@ -17,7 +17,7 @@ function init() {
 	});
 	var paraImages = $('section.para');
 	paraImages.each( function(){
-		console.log($(this).data('image'));
+		//console.log($(this).data('image'));
 		$(this).parallax({
 			imageSrc: $(this).data('image'),
 		 	positionY: 'top'

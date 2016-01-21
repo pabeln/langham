@@ -8,36 +8,44 @@ Menus
 .mainMenu-menu {
 	text-align: center;
 }
-.mainMenu-list { 
-	.clearfix(); 
-	margin: 0 auto;
-	display: block;
-		li { 
-			display: inline-block;
-			padding: 15px 0;
-		a { 
-			background: @gray;
-			color: @white; 
-			display: block; 
-			font-family: @brand-font-sans;
-			font-size: 0.75em;
-			margin: 0; 
-			padding: 0;
-			text-transform: uppercase;
-				
-			.my-span{
-				float:right;
-				font-size: 0.9em;
-				margin: 0 0.3em 0 .7em;
+.header {
+	.nav {
+		.mainMenu-list { 
+			.clearfix(); 
+			margin: 0 auto;
+			display: block;
+				li { 
+					display: inline-block;
+					padding: 15px 0;
+				a { 
+					background: @gray;
+					color: @white; 
+					display: block; 
+					font-family: @brand-font-sans;
+					font-size: 0.75em;
+					margin: 0; 
+					padding: 0;
+					text-transform: uppercase;
+						
+					.my-span{
+						float:right;
+						font-size: 0.9em;
+						margin: 0 0.3em 0 .7em;
+					}
+				}
+				&.current-menu-item a {
+					color: @pink;
+				}
+				&.last a .my-span {
+					display:none;
+				}
 			}
 		}
-		&.current-menu-item a {
-			color: @pink;
-		}
-		&.last a .my-span {
-			display:none;
-		}
 	}
+	.mobile-nav {
+		display: none;
+	}
+	
 }
 
 .menuBar {}
@@ -80,12 +88,65 @@ Menus
 
 // X-Small only
 @media screen and (max-width: @screen-xs-max) {
-	.mainMenu-menu { display: none; }
-
+	.header {
+		position: relative;
+		.mainMenu-menu { display: none; }
+		.mobile-nav {
+			display: none;
+			left:0;
+			position: absolute;
+			top: 100px;
+			width:100%;
+			z-index:2000;
+			.mobileMenu-menu {
+				.clearfix(); 
+				display: block;
+				background-color: @gray;
+					li { 
+						display: block;
+						padding: 15px 0;
+					a { 
+						background-color: @gray;
+						color: @white; 
+						display: block; 
+						font-family: @brand-font-sans;
+						font-size: 0.75em;
+						margin: 0; 
+						padding: 0;
+						text-transform: uppercase;
+					}
+					&.current-menu-item a {
+						color: @pink;
+					}
+					&.last a .my-span {
+						display:none;
+					}
+				}
+			}		
+		}
+	}
 }
 
 // Small only
-@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {}
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+	.header {
+		.nav {
+			.header-container {
+				padding: 0;
+				.mainMenu-list { 
+					li { 
+						padding: 10px 0;
+						a {
+							font-size: 0.7em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
 
 // Medium only
 @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {}

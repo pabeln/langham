@@ -18,4 +18,13 @@
 		</div>
 	</div>
 	<div class="mobile-nav-icon"></div>
+	<div class="mobile-nav"> <!-- visible-xs-block -->
+		<?php wp_nav_menu( array(
+			'theme_location' => 'header',
+			'container' => 'nav',
+			'container_class' => 'mobileMenu-menu',
+			'menu' => 'Main Nav',
+			'menu_class' => 'mobileMenu-list'
+		)); ?>
+	</div>
 </header>

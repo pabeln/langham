@@ -4,21 +4,185 @@ OwlCarousel
 
 @import (inline) "../vendor/owl.carousel.css";
 
+.slider {
+	background-color: @gray;
+	height:800px; 
+	overflow:hidden;
+	position: relative;
+	.trans-overlay {
+		background-color: #000;
+		position: absolute;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		top: 0;
+		z-index: 1001;
+	}
+	.owl-carousel {
+		position: relative;
+		.owl-item figure {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.owlCarousel-caption {
+				height: 100%;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1002;
+				display : flex;
+				align-items : center;	
+				.caption {
+					color: @pink;
+					margin: 0 auto;
+					.heading,.sub-heading,.txt {
+						width: 40%;
+						margin: 0 auto;
+					}
+					.heading {
+						color: @pink;
+						font-size: 3em;
+						font-family: @brand-font-serif;
+						font-variant: small-caps;
+						margin: 0 auto 40px;
+					}
+					.sub-heading {
+						color: @pink;
+						font-size: 2.5em;
+						font-family: @brand-font-serif;
+					}
+					.txt {
+						color: @pink;
+						font-size: 1em;
+						font-family: @brand-font-sans;
+						line-height: 1.7;
+					}
+				}
+			}
+		}
+		.owl-controls {
+			height: 100%;
+			position: absolute;
+			right: 63px;
+			top: 22.5%;
+			width: 70px;
+			z-index: 1002;
+			.owl-buttons {
+				position: relative;
+				.owl-next, .owl-prev {
+					background-color: @pink;
+					color: @white;
+					font-family: "arial narrow",sans-serif;
+					font-size: 7em;
+					height: 208px;
+					padding-top: 17px;
+					position: absolute;
+					width: 70px;
+					&:hover {
+						background-color: @white;
+						color: @pink;
+					}
+				}
+				.owl-next {
+					top: 0px;
+				}
+				.owl-prev {
+					top: 228px;
+				}
+			}
+		}
+	}
+}
+
 
 // Small and larger
-@media screen and (min-width: @screen-sm-min) {}
+@media screen and (min-width: @screen-sm-min) { // 768 and larger
+
+}
 
 // Medium and larger
-@media screen and (min-width: @screen-md-min) {}
+@media screen and (min-width: @screen-md-min) { // 992 larger
+
+}
 
 // Large and larger
-@media screen and (min-width: @screen-lg-min) {}
+@media screen and (min-width: @screen-lg-min) { // 1200 and larger
+}
 
 // X-Small only
-@media screen and (max-width: @screen-xs-max) {}
+@media screen and (max-width: @screen-xs-max) { // 767 and smaller 
+}
 
 // Small only
-@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {}
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { // between 768 & 991 
+	.slider {
+		height:533px; 
+		.owl-carousel {
+			.owl-item figure .owlCarousel-caption .caption {
+				.heading {
+					width: 70%;
+					font-size: 2.3em;
+				}
+				.sub-heading {
+
+				}
+				.txt {
+					width: 60%;
+				}
+			}
+			.owl-controls {
+				right: 3%;
+				top: 9.5%;
+				width: 50px;
+				.owl-buttons {
+					height: 100%;
+					.owl-next, 
+				 	.owl-prev {
+						height: 40%;
+						font-size: 6.6em;
+						padding-top: 1%;
+						width: 99%;
+					}
+					.owl-prev {
+						top: 43%;
+					}
+				}
+			}
+		}
+	}
+}
 
 // Medium only
-@media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {}
+@media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) { // between 992 & 1199
+
+	.slider {
+		height: 403px; 
+		.owl-carousel {
+			.owl-item figure .owlCarousel-caption .caption {
+				.heading {
+					width: 60%;
+					font-size: 2.3em;
+				}
+				.sub-heading {
+
+				}
+			}
+			.owl-controls {
+				top: 11.5%;
+				width: 50px;
+				.owl-buttons .owl-next, 
+				.owl-buttons .owl-prev {
+					height: 190px;
+					padding-top: 7px;
+					width: 50px;
+				}
+			}
+		}
+	}
+
+
+}

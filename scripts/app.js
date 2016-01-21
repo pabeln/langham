@@ -19,6 +19,7 @@ var fadeInOnScroll	= require('./fadeInOnScroll.js');
 $(function() {
 	//analytics.init();
 	carousel.init();
+	carousel.darkenFadeInOnScroll();
 	responsive.init();
 	scripts.init();
 	fadeInOnScroll.init();

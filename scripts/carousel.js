@@ -17,12 +17,38 @@ function init() {
 		],
 		rewindNav: true,
 		navigation: true,
-		navigationText: ['<', '>'], // use icon font to display arrows
+		navigationText: ['&lsaquo;', '&rsaquo;'], // use icon font to display arrows
 		pagination: true,
 		autoplay: true,
 		stopOnHover: true,
 		responsiveBaseWidth: window //for IE8 set to main wrapper
 	});
+};
+
+function darkenFadeInOnScroll(){
+
+	/* Every time the window is scrolled ... */
+	$(window).scroll( function(){
+		/* Check the location of each desired element */
+		$('.slider').each( function(i) {
+			var overlay = $(this).find('.trans-overlay');
+			var txt = $(this).find('.owlCarousel-caption');
+			var middle_of_object = $(this).offset().top + ($(this).outerHeight() / 2);
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+			
+			/* If the object is completely visible in the window, fade it it */
+			if( bottom_of_window > middle_of_object ){
+				overlay.animate(
+					{'opacity':'.6'},
+					1000,
+					function() {
+						txt.animate({'opacity': 1}, 1000);
+					});
+			}
+			
+		}); 
+	});
+
 };
 
 /**
@@ -44,5 +70,6 @@ function destroy(selector) {
  */
 module.exports = {
 	init: init,
-	destroy: destroy
+	destroy: destroy,
+	darkenFadeInOnScroll: darkenFadeInOnScroll
 };
