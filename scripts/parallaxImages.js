@@ -20,7 +20,8 @@ function init() {
 		//console.log($(this).data('image'));
 		$(this).parallax({
 			imageSrc: $(this).data('image'),
-		 	positionY: 'top'
+		 	position: 'left bottom', 
+		 	bleed: 2000
 		});
 	});
 
