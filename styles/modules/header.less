@@ -43,8 +43,11 @@ header {
 // Large and larger
 @media screen and (min-width: @screen-lg-min) {}
 
-// X-Small only
-@media screen and (max-width: @screen-xs) {
+
+/***************************************************************************/
+/* X-Small only */
+/***************************************************************************/
+@media screen and (max-width: @screen-xs) { // 480
 	header {
 		.head {
 			height: 100px;
@@ -71,8 +74,28 @@ header {
 	}
 }
 
-// Small only
-@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {}
+/***************************************************************************/
+/* Small only */
+/***************************************************************************/
+@media screen and (min-width: @screen-xs-min) and (max-width: @screen-xs-max) { // 480 & 767
+
+	header {
+		.head {
+			height: 110px;
+			padding-top: 20px;
+		}
+		.mobile-nav-icon {
+			display: inline;
+			background: @pink url('@{img-path}mobile-nav-icon.png') no-repeat 0 0;
+			width: 42px;
+			height: 25px;
+			position: absolute;
+			top: 35px;
+			right: 20px;
+		}
+	}
+
+}
 
 // Medium only
 @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {}

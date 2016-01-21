@@ -32,6 +32,11 @@ function init() {
 		});
 
 	});
+
+	// mobile nav
+	$('.mobile-nav-icon').on('click', function (){
+		$('.mobile-nav').slideToggle('slow');
+	});
 }
 
 /**
