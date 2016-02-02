@@ -37,6 +37,18 @@ function init() {
 	$('.mobile-nav-icon').on('click', function (){
 		$('.mobile-nav').slideToggle('slow');
 	});
+
+
+	// fix menu
+	var nav = $('header .nav');
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 136) {
+            nav.addClass("fixed");
+        } else {
+            nav.removeClass("fixed");
+        }
+    });
 }
 
 /**
