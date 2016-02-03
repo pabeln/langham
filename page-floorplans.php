@@ -19,11 +19,20 @@
 				<p class="plan-subtitle"><?php echo the_field('sub_title'); ?></p>
 			</div>
 			<div class="floorplan expando">
+				<div class="floorplan-diagram">
+					<img src="<?php echo the_field('floorplan_image') ?>" alt="<?php echo the_title(); ?>">
+					<?php if (get_field('floorplan_image2')) { ?>
+						<img src="<?php echo the_field('floorplan_image2') ?>" alt="<?php echo the_title(); ?>">
+					<?php } ?>
+				</div>
+				<div class="areas">
+					<p>Total Area: <?php the_field('total_area') ?></p>
+					<p>Internal Area: <?php the_field('internal_area') ?></p>
+					<p>Terrace Area: <?php the_field('terrace_area') ?></p>
+				</div>
+					<?php /* 
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1">
-						<div class="floorplan-diagram">
-							<img src="<?php echo the_field('floorplan_image') ?>" alt="<?php echo the_title(); ?>">
-						</div>
 					</div>
 					<div class="col-md-5">
 						<div class="floorplan-map">
@@ -55,6 +64,7 @@
 						</div>
 					</div>
 				</div>
+							*/ ?>
 				<div class="closer">^</div>
 			</div>
 		</div>

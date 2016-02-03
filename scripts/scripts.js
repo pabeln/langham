@@ -23,12 +23,16 @@ function init() {
 	$('.expando-wrapper').each(function(){
 		var header = $(this).find('.expando-trigger');
 		var content = $(this).find('.expando');
+		var closer = $(this).find('.closer');
 		header.on('click', function(){
 			if (content.is(':visible')) {
 				content.slideUp('slow');
 			} else {
 				content.slideDown('slow');
 			}
+		});
+		closer.on('click', function(){
+			content.slideUp('slow');
 		});
 
 	});
@@ -39,7 +43,7 @@ function init() {
 	});
 
 
-	// fix menu
+/*	// fix menu
 	var nav = $('header .nav');
     
     $(window).scroll(function () {
@@ -48,7 +52,8 @@ function init() {
         } else {
             nav.removeClass("fixed");
         }
-    });
+    });*/
+
 }
 
 /**
