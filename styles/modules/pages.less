@@ -137,6 +137,18 @@ section {
 	&.parallax {
 		background-repeat: no-repeat;
 		background-size: cover;
+		.gray-overlay {
+			background-color: rgba(0, 0, 0, .51);
+			width: 100%;
+			height: 100%;
+			.copy-container {
+				.copy {
+					.heading, .sub-heading, .txt {
+						color: @white;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -171,6 +183,10 @@ section {
 /***************************************************************************/
 @media screen and (max-width: @screen-xs) { // 480 or smaller
 
+	main {
+		margin-top: 100px;
+	}
+
 	section {  
 		&.top { 
 			max-height: 480px;
@@ -179,7 +195,7 @@ section {
 				background-size: cover;
 				max-height: 600px;
 				.copy-container {
-					padding: 100px 0;
+					padding: 50px 0;
 				}
 			}
 			.copy-container .copy {
@@ -224,6 +240,10 @@ section {
 
 // Small only
 @media screen and (min-width: @screen-xs-min) and (max-width: @screen-xs-max) { // 480 & 767
+
+	main {
+		margin-top: -83px;
+	}
 
 	section { 
 		&.top { 

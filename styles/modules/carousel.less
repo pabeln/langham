@@ -20,6 +20,9 @@ OwlCarousel
 		z-index: 1001;
 	}
 	.owl-carousel {
+		.owl-wrapper-outer {
+
+		}
 		position: relative;
 		.owl-item figure {
 			img {
@@ -115,12 +118,54 @@ OwlCarousel
 
 // X-Small only
 @media screen and (max-width: @screen-xs-max) { // 767 and smaller 
+
+	.slider {
+		height: 600px;
+		.owl-carousel {
+			.owl-wrapper-outer {
+				height: 600px;
+			}
+			.owl-controls {
+				height: 100%;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 70%;
+				z-index: 1002;
+				.owl-buttons {
+					position: relative;
+					.owl-next, .owl-prev {
+						background-color: @pink;
+						color: @white;
+						font-family: "arial narrow",sans-serif;
+						font-size: 3.4em;
+						height: 101px;
+						padding-top: 8px;
+						position: absolute;
+						width: 45px;
+						&:hover {
+							background-color: @white;
+							color: @pink;
+						}
+					}
+					.owl-next {
+						top: 0px;
+					}
+					.owl-prev {
+						top: 0px;
+					}
+				}
+			}
+		}
+	}
+
 }
 
 // Small only
 @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { // between 768 & 991 
+	
 	.slider {
-		height:533px; 
+		height:400px; 
 		.owl-carousel {
 			.owl-item figure .owlCarousel-caption .caption {
 				.heading {
@@ -160,7 +205,7 @@ OwlCarousel
 @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) { // between 992 & 1199
 
 	.slider {
-		height: 403px; 
+		height: 533px; 
 		.owl-carousel {
 			.owl-item figure .owlCarousel-caption .caption {
 				.heading {

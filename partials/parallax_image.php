@@ -1,12 +1,9 @@
 <?php 
-	//$imgObj = get_sub_field('image');
-	//$imgH = $imgObj['sizes']['large-height'];
+
 	$imgObj = wp_get_attachment_image_src(get_sub_field('image'), 'full');
 	$imgUrl = $imgObj[0];
 	$imgW = $imgObj[1];
 	$imgH = $imgObj[2];
-	//(original height / original width) x new width = new height
-	//$newH = 2560 * ( $imgH / $imgW );
 	$divId = basename($imgUrl);
 	$divId = preg_replace('/\\.[^.\\s]{3,4}$/', '', $divId);
 

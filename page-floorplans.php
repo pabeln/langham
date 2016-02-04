@@ -3,7 +3,9 @@
 	$loop = new WP_Query( array(
 		'post_type' => 'floorplan',
 		'posts_per_page' => -1,
-		'orderby' => 'title'
+		'meta_key'			=> 'floorplan_order',
+		'orderby'			=> 'meta_value_num',
+		'order'				=> 'ASC'
 		)
 	);
 ?>
@@ -25,10 +27,16 @@
 						<img src="<?php echo the_field('floorplan_image2') ?>" alt="<?php echo the_title(); ?>">
 					<?php } ?>
 				</div>
-				<div class="areas">
-					<p>Total Area: <?php the_field('total_area') ?></p>
-					<p>Internal Area: <?php the_field('internal_area') ?></p>
-					<p>Terrace Area: <?php the_field('terrace_area') ?></p>
+				<div class="row areas">
+					<div class="col-md-4">
+						<p>Total Area: <?php the_field('total_area') ?></p>
+					</div>
+					<div class="col-md-4">
+						<p>Internal Area: <?php the_field('internal_area') ?></p>
+					</div>
+					<div class="col-md-4">
+						<p>Terrace Area: <?php the_field('terrace_area') ?></p>
+					</div>
 				</div>
 					<?php /* 
 				<div class="row">

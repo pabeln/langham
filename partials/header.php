@@ -1,7 +1,7 @@
 <header class="header">
 	<div class="head">
 		<div class="header-container container">
-			<div class="title"><a href="">LANGHAM PLACE</a></div>
+			<div class="title"><a href="/about">LANGHAM PLACE</a></div>
 			<div class="subtitle">DOWNTOWN DUBAI</div>
 		</div>
 	</div>

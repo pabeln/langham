@@ -4,7 +4,7 @@
  */
 
 var enquire = require('./vendor/enquire');
-var parallaxImages = require('./parallaxImages.js');
+//var parallaxImages = require('./parallaxImages.js');
 
 /**
  * Monitors window size for breakpoints
@@ -26,7 +26,7 @@ function monitorBreakpoints() {
 		register("screen and (min-width: 992px)", { // Medium
 			match: function() {
 				console.log('>= 992px');
-				parallaxImages.init();
+				//parallaxImages.init();
 			},
 			unmatch: function() {}
 		}).

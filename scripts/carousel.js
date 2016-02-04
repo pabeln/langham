@@ -20,8 +20,7 @@ function init() {
 		navigationText: ['&lsaquo;', '&rsaquo;'], // use icon font to display arrows
 		pagination: true,
 		autoplay: true,
-		stopOnHover: true,
-		responsiveBaseWidth: window //for IE8 set to main wrapper
+		stopOnHover: true
 	});
 };
 
