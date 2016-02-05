@@ -18,8 +18,10 @@
 	?>
 		<div class="press-wrapper expando-wrapper">
 			<div class="press-header expando-trigger">
-				<h2 class="press-title"><?php echo the_title(); ?></h2>
+				<h3 class="press-title"><?php echo the_title(); ?></h3>
+				<?php if( get_field('sub_title') ) { ?>
 				<p class="press-subtitle"><?php echo the_field('sub_title'); ?></p>
+				<?php } ?>
 			</div>
 			<div class="article expando">
 				<div class="body">

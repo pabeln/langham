@@ -152,6 +152,41 @@ section {
 	}
 }
 
+
+// brochure
+
+.page-brochure {
+	background-color: @gray;
+	.main {
+		.container {
+			.brochure-wrapper {
+				margin: 115px auto 0;
+				text-align: center;
+				h1 {
+					color: @pink;
+					font-size: 4em;
+					font-family: @brand-font-serif;
+					margin: 0 auto;
+					font-variant: small-caps;
+				}
+				.brochure-copy {
+					color: @pink;
+					font-size: 1em;
+					font-family: @brand-font-sans;
+					a {
+						color: @white;
+					}
+				}
+			}
+		}
+	}
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
 // Medium and larger
 @media screen and (min-width: @screen-md-min) { // 992 & larger
 	section {  
