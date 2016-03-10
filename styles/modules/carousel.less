@@ -70,31 +70,28 @@ OwlCarousel
 		.owl-controls {
 			height: 100%;
 			position: absolute;
-			right: 63px;
-			top: 22.5%;
-			width: 70px;
+			left: 2%;
+			top: 32%;
+			width: 100%;
 			z-index: 1002;
 			.owl-buttons {
 				position: relative;
 				.owl-next, .owl-prev {
-					background-color: @pink;
 					color: @white;
 					font-family: "arial narrow",sans-serif;
 					font-size: 7em;
-					height: 208px;
-					padding-top: 17px;
 					position: absolute;
-					width: 70px;
+					width: auto;
 					&:hover {
-						background-color: @white;
 						color: @pink;
 					}
 				}
 				.owl-next {
-					top: 0px;
+					top: 0;
+					right: 4%;
 				}
 				.owl-prev {
-					top: 228px;
+					top: 0;
 				}
 			}
 		}
@@ -118,33 +115,38 @@ OwlCarousel
 
 // X-Small only
 @media screen and (max-width: @screen-xs-max) { // 767 and smaller 
-
 	.slider {
-		height: 600px;
+		height: 700px;
 		.owl-carousel {
 			.owl-wrapper-outer {
 				height: 600px;
 			}
+			.owl-item figure .owlCarousel-caption {
+				width: 100%;
+				text-align: center;
+				.caption {
+					width: 90%;
+					margin: 0 auto;
+					.heading {
+						width: 100%;
+						font-size: 2em;
+						margin: auto;
+					}
+					.txt {
+						width: 100%;
+						font-size: 0.9em;
+					}
+				}
+			}
 			.owl-controls {
-				height: 100%;
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				width: 70%;
-				z-index: 1002;
+				top: 17%;
 				.owl-buttons {
 					position: relative;
 					.owl-next, .owl-prev {
-						background-color: @pink;
-						color: @white;
 						font-family: "arial narrow",sans-serif;
 						font-size: 3.4em;
-						height: 101px;
-						padding-top: 8px;
-						position: absolute;
-						width: 45px;
 						&:hover {
-							background-color: @white;
+
 							color: @pink;
 						}
 					}
@@ -180,20 +182,14 @@ OwlCarousel
 				}
 			}
 			.owl-controls {
-				right: 3%;
-				top: 9.5%;
-				width: 50px;
 				.owl-buttons {
 					height: 100%;
 					.owl-next, 
 				 	.owl-prev {
-						height: 40%;
 						font-size: 6.6em;
-						padding-top: 1%;
-						width: 99%;
 					}
 					.owl-prev {
-						top: 43%;
+						top: 0;
 					}
 				}
 			}
@@ -217,13 +213,9 @@ OwlCarousel
 				}
 			}
 			.owl-controls {
-				top: 11.5%;
-				width: 50px;
 				.owl-buttons .owl-next, 
 				.owl-buttons .owl-prev {
-					height: 190px;
-					padding-top: 7px;
-					width: 50px;
+					height: auto;
 				}
 			}
 		}

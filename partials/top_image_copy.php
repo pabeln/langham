@@ -25,7 +25,7 @@
 */
 ?>
 
-<section id="<?php echo $divId; ?>" class="top parallax" style="background-image: url('<?php echo $imgUrl; ?>');">
+<section id="<?php echo $divId; ?>" class="top parallax"  data-image="<?php echo $imgUrl; ?>">
 	<div class="top-inner">
 		<div class="gray-trans">
 			<div class="container copy-container">

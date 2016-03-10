@@ -12,6 +12,7 @@ var AnalyticsModule = require('./analytics.js');
 var analytics 		= new AnalyticsModule({ gaid: '' });
 var scripts 		= require('./scripts.js');
 var fadeInOnScroll	= require('./fadeInOnScroll.js');
+var para 			= require('./parallaxImages.js');
 
 /**
  * Initialize the app on DOM ready
@@ -23,4 +24,5 @@ $(function() {
 	responsive.init();
 	scripts.init();
 	fadeInOnScroll.init();
+	para.init();
 });

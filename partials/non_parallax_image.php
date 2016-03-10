@@ -6,13 +6,8 @@
 	$imgH = $imgObj[2];
 	$divId = basename($imgUrl);
 	$divId = preg_replace('/\\.[^.\\s]{3,4}$/', '', $divId);
-
-/*
-<section id="<?php echo $divId; ?>" class="parallax" style="background-image: url('<?php echo $imgUrl; ?>');" title="<?php echo $divId; ?>">
-</section>
-*/
 ?>
-<section id="<?php echo $divId; ?>" class="parallax" data-image="<?php echo $imgUrl; ?>">
+<section id="<?php echo $divId; ?>" class="non-parallax" style="background-image: url('<?php echo $imgUrl; ?>');">
 	<div class="para-inner" style="background-image: url('<?php echo $imgUrl; ?>');"></div>
 </section> 
 <script>

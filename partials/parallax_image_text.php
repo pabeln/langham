@@ -25,7 +25,7 @@
 </section>
 */
 ?>
-<section id="<?php echo $divId; ?>" class="parallax" style="background-image: url('<?php echo $imgUrl; ?>');" title="<?php echo $divId; ?>">
+<section id="<?php echo $divId; ?>" class="parallax"  data-image="<?php echo $imgUrl; ?>">
 	<div class="gray-overlay">
 		<div class="container copy-container hideme">
 			<div class="copy">
